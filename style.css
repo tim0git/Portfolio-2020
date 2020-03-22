@@ -1,57 +1,173 @@
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
 /* General Styles */
 .pagecontainer{
-    border: 1px solid black;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
 }
 
 .landing-page{
-    border: 1px solid black;
     width: 100%;
     min-height: 400px;
+    text-align: center;
+    text-justify: auto;
+    background-color: #423E37;
 }
 
-.navmenu{
-    border: 1px solid black;
-    background-color: #333333;
-    color: #FCFAF9;
-    width: 100%;
-    height: 2rem;
+
+.intromessage {
+margin-top: 10%;
+font-size: 2rem;
+color: #EDEBD7;
 }
+.intromessage2 {
+font-size: 2rem;
+color: #EDEBD7;
+}
+
+.introbtn{
+    border-radius: 1rem;
+    border-style: solid;
+    background-color: transparent;
+    width: 7rem;
+    height: 3rem;
+    font-size: 0.75rem;
+    color: #EDEBD7;
+}
+.introbtn:hover{
+   background-color: #E3B23C;
+   color: black;
+   font-size: 0.85rem;
+}
+.navmenu{
+    width: 100%;
+
+}
+
+/* Nav Menu */
+ul {
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+
+  .active {
+    color: #E3B23C;
+  }
+
 .navmenubreak{
   background-color: #E3B23C; 
-  height: 0.15rem;
+  height: 0.20rem;
   width: 100%;
-  z-index: 1;
 }
 
+
+
+
+/* About section */
 .about{
-    border: 1px solid black;
+ 
     width: 100%;
     min-height: 400px;
-    justify-items: center;
+    text-align: center;
+    position: relative;
 }
 
 .projects{
-    border: 1px solid black;
     width: 100%;
     justify-items: center;
     background-color: whitesmoke;
     min-height: 400px;
+    position: relative;
+    text-align: center;
 }
 
 .blog{
-    border: 1px solid black;
     width: 100%;
     min-height: 400px;
     justify-items: center;
+    position: relative;
+    text-align: center;
 }
 
 .contact{
-    border: 1px solid black;
+   
     width: 100%;
     min-height: 400px;
+    position: relative;
+    text-align: center;
+    grid-auto-rows: auto;
+    
+}
+.contactform {
+ margin: auto;
 }
 
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: transparent;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #A39594;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #E3B23C;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    width: 80%;
+    background-color: #f2f2f2;
+    padding: 1rem;
+    border: 1rem;
+    margin: auto;
+
+}
+
+
+
 footer{
-    border: 1px solid black;
+
     width: 100%;
+    position: relative;
+    text-align: center;
 }

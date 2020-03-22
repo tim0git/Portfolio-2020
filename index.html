@@ -6,22 +6,24 @@
     <title>Document</title>
     <!-- CSS Style sheet Link-->
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="pagecontainer"> <!--grid page conatiner-->
   <!-- Landing Page -->
   <div class="landing-page">
-    <h2>Hello, I'm Timothy Doolan.</h2>
-    <h2>I am a full-stack developer.</h2>
+    <h2 class="intromessage">Hello, I'm Timothy Doolan.</h2>
+    <h2 class="intromessage2">I am a full-stack developer.</h2>
+    <button class="introbtn">View my work</button>
   </div>
   <!-- Nav Menu -->
   <div class="navmenu">
     <ul>
-      <li>HOME</li>
-      <li>ABOUT</li>
-      <li>PORTFOLIO</li>
-      <li>BLOG</li>
-      <li>CONTACT</li>
+      <li><a class="active" href="#home">HOME</a></li>
+      <li><a href="#news">ABOUT</a></li>
+      <li><a href="#contact">PROJECTS</a></li>
+      <li><a href="#about">BLOG</a></li>
+      <li><a href="#about">CONTACT</a></li>
     </ul>
   </div>
   <!-- Nav Menu Break -->
@@ -42,48 +44,24 @@
   <div class="contact">
     <h2>CONTACT</h2>
     <!-- Contact Form -->
-    <div id="contact-form">
-      <div>
-          <h3>Nice to Meet You!</h3> 
-          <h4>Have a question or just want to get in touch? Let's chat.</h4> 
-      </div>
-          <p id="failure">Oopsie...message not sent.</p>  
-          <p id="success">Your message was sent successfully. Thank you!</p>
-  
-             <form method="post" action="/">
-              <div>
-                <label for="name">
-                    <span class="required">Name: *</span> 
-                    <input type="text" id="name" name="name" value="" placeholder="Your Name" required="required" tabindex="1" autofocus="autofocus" />
-                </label> 
-              </div>
-              <div>
-                <label for="email">
-                    <span class="required">Email: *</span>
-                    <input type="email" id="email" name="email" value="" placeholder="Your Email" tabindex="2" required="required" />
-                </label>  
-              </div>
-              <div>		          
-                <label for="subject">
-                <span>Subject: </span>
-                    <select id="subject" name="subject" tabindex="4">   
-                       <option value="hello">Hey let's work together!</option>
-                       <option value="quote">Projects and pricing?</option>  
-                       <option value="general">I have an idea that will change the world!</option>
-                    </select>
-                </label>
-              </div>
-              <div>		          
-                <label for="message">
-                    <span class="required">Message: *</span> 
-                    <textarea id="message" name="message" placeholder="Please write your message here." tabindex="5" required="required"></textarea> 
-                </label>  
-              </div>
-              <div>		           
-                <button name="submit" type="submit" id="submit" >SEND</button> 
-              </div>
-             </form>
-  </div>
+    <div class="container">
+      <form action="">
+    
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+       
+    
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit">
+    
+      </form>
+    </div>
   <!-- End of conatact Form-->
   </div>
 </div>
