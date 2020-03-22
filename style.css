@@ -1,0 +1,57 @@
+/* General Styles */
+.pagecontainer{
+    border: 1px solid black;
+}
+
+.landing-page{
+    border: 1px solid black;
+    width: 100%;
+    min-height: 400px;
+}
+
+.navmenu{
+    border: 1px solid black;
+    background-color: #333333;
+    color: #FCFAF9;
+    width: 100%;
+    height: 2rem;
+}
+.navmenubreak{
+  background-color: #E3B23C; 
+  height: 0.15rem;
+  width: 100%;
+  z-index: 1;
+}
+
+.about{
+    border: 1px solid black;
+    width: 100%;
+    min-height: 400px;
+    justify-items: center;
+}
+
+.projects{
+    border: 1px solid black;
+    width: 100%;
+    justify-items: center;
+    background-color: whitesmoke;
+    min-height: 400px;
+}
+
+.blog{
+    border: 1px solid black;
+    width: 100%;
+    min-height: 400px;
+    justify-items: center;
+}
+
+.contact{
+    border: 1px solid black;
+    width: 100%;
+    min-height: 400px;
+}
+
+footer{
+    border: 1px solid black;
+    width: 100%;
+}

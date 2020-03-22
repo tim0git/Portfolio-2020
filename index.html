@@ -4,8 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- CSS Style sheet Link-->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+  <div class="pagecontainer"> <!--grid page conatiner-->
+  <!-- Landing Page -->
+  <div class="landing-page">
+    <h2>Hello, I'm Timothy Doolan.</h2>
+    <h2>I am a full-stack developer.</h2>
+  </div>
+  <!-- Nav Menu -->
+  <div class="navmenu">
+    <ul>
+      <li>HOME</li>
+      <li>ABOUT</li>
+      <li>PORTFOLIO</li>
+      <li>BLOG</li>
+      <li>CONTACT</li>
+    </ul>
+  </div>
+  <!-- Nav Menu Break -->
+  <div class="navmenubreak"></div>
+  <!-- About Me Page -->
+  <div class="about" id="aboutme">
+    <h2>ABOUT</h2>
+  </div>
+  <!-- projects -->
+  <div class="projects">
+    <h2>PROJECTS</h2>
+  </div>
+  <!-- my blog -->
+  <div class="blog">
+    <h2>BLOG</h2>
+  </div>
+  <!-- Contact me -->
+  <div class="contact">
+    <h2>CONTACT</h2>
+    <!-- Contact Form -->
+    <div id="contact-form">
+      <div>
+          <h3>Nice to Meet You!</h3> 
+          <h4>Have a question or just want to get in touch? Let's chat.</h4> 
+      </div>
+          <p id="failure">Oopsie...message not sent.</p>  
+          <p id="success">Your message was sent successfully. Thank you!</p>
+  
+             <form method="post" action="/">
+              <div>
+                <label for="name">
+                    <span class="required">Name: *</span> 
+                    <input type="text" id="name" name="name" value="" placeholder="Your Name" required="required" tabindex="1" autofocus="autofocus" />
+                </label> 
+              </div>
+              <div>
+                <label for="email">
+                    <span class="required">Email: *</span>
+                    <input type="email" id="email" name="email" value="" placeholder="Your Email" tabindex="2" required="required" />
+                </label>  
+              </div>
+              <div>		          
+                <label for="subject">
+                <span>Subject: </span>
+                    <select id="subject" name="subject" tabindex="4">   
+                       <option value="hello">Hey let's work together!</option>
+                       <option value="quote">Projects and pricing?</option>  
+                       <option value="general">I have an idea that will change the world!</option>
+                    </select>
+                </label>
+              </div>
+              <div>		          
+                <label for="message">
+                    <span class="required">Message: *</span> 
+                    <textarea id="message" name="message" placeholder="Please write your message here." tabindex="5" required="required"></textarea> 
+                </label>  
+              </div>
+              <div>		           
+                <button name="submit" type="submit" id="submit" >SEND</button> 
+              </div>
+             </form>
+  </div>
+  <!-- End of conatact Form-->
+  </div>
+</div>
 </body>
+<footer>
+<h6>TIMOTHY DOOLAN @ 2020</h6>
+</footer>
 </html>
