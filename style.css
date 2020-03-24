@@ -12,12 +12,11 @@ html{
 
 .landing-page{
     width: 100%;
-    min-height: 620px;
+    min-height: 480px;
     text-align: center;
     text-justify: auto;
     background-color: #423E37;
 }
-
 
 .intromessage {
 margin-top: 10%;
@@ -47,12 +46,13 @@ color: #EDEBD7;
    color: black;
    font-size: 0.85rem;
 }
+
+
+/* Nav Menu */
 .navmenu{
     width: 100%;
 
 }
-
-/* Nav Menu */
 ul {
     list-style-type: none;
     width: 100%;
@@ -99,6 +99,7 @@ ul {
     text-align: center;
     position: relative;
 }
+
 .aboutmecontainer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -110,7 +111,7 @@ ul {
 
 .aboutme1{
     grid-column: 1/2;
-border: 1px solid black;
+/*border: 1px solid black;*/
 text-align: center;
 padding: 0.5rem;
 }
@@ -129,37 +130,85 @@ padding: 0.5rem;
 
 .aboutme2{
     grid-column: 2/3;
-border: 1px solid black;
+/*border: 1px solid black;*/
 padding: 0.5rem;
 }
 
 .aboutme3{
     grid-column: 3/4;
-border: 1px solid black;
+/*border: 1px solid black;*/
 padding: 0.5rem;
 }
 
 .aboutme4{
     grid-column: 4/5;
-border: 1px solid black;
+/*border: 1px solid black;*/
 padding: 0.5rem;
 }
 
 .aboutme5{
 grid-column: 1/3;
-border: 1px solid black;
+/*border: 1px solid black;*/
 padding: 0.5rem;
+padding-top: 1rem;
+margin-top: 1.5rem;
 }
 
 .aboutme6{
-    grid-column: 3/5;
-border: 1px solid black;
+grid-column: 3/5;
+/*border: 1px solid black;*/
 min-height: 200px;
-padding: 0.5rem;
+padding-left: 0.5;
+padding-bottom: 2rem;
 }
 
+.progressbar {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 0.5rem;
+    margin: 0;
+    grid-gap: 0;
+}
 
+.techskill{
+    padding-bottom: 0rem;
+    margin-bottom: 0rem;
+    border-bottom: 0rem;
+}
 
+/*START OF PROGRESS BARS*/
+/* set standard appearance for non chrome browsers.*/
+progress[value] {
+    /* Reset the default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+    width: 80%;
+    height: 1rem;
+  }
+/* color background bar */
+progress[value]::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+/* color progress bar with gradient*/
+progress[value]::-webkit-progress-value {
+    background-image:
+         -webkit-linear-gradient(-45deg, 
+                                 transparent 33%, rgba(0, 0, 0, .1) 33%, 
+                                 rgba(0,0, 0, .1) 66%, transparent 66%),
+         -webkit-linear-gradient(top, 
+                                 rgba(255, 255, 255, .25), 
+                                 rgba(0, 0, 0, .25)),
+         -webkit-linear-gradient(left, #09c, #f44);
+  
+      border-radius: 2px; 
+      background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+/*end of progress bar*/
+
+/* END OF ABOUT SECTION */
 
 .projects{
     width: 100%;
@@ -170,6 +219,9 @@ padding: 0.5rem;
     text-align: center;
 }
 
+
+
+/* BLOG SECTION*/
 .blog{
     width: 100%;
     min-height: 400px;
@@ -178,13 +230,32 @@ padding: 0.5rem;
     text-align: center;
 }
 
+.blogcontainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    padding: 3rem;
+
+}
+
+.blog1{
+    border: 1px solid black;
+    min-height: 240px;
+    min-width: 100px;
+}
+
+
+
+/* CONTACT SECTION */
 .contact{
-   
+    background-color: #423E37;
     width: 100%;
     min-height: 400px;
     position: relative;
     text-align: center;
     grid-auto-rows: auto;
+    color: #EDEBD7;
+    padding-bottom: 3rem;
     
 }
 .contactform {
@@ -227,12 +298,11 @@ input[type=submit]:hover {
     margin: auto;
 
 }
-
-
-
-footer{
-
+/*color in footer and color text*/
+.footer{
+    background-color: #423E37;
     width: 100%;
-    position: relative;
     text-align: center;
+    padding-bottom: 1rem;
+    color: #EDEBD7;
 }
