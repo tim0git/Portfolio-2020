@@ -1,4 +1,8 @@
 html{
+    padding: 0rem;
+    margin: 0rem;
+    border: 0rem;
+
     font-family: 'Roboto', sans-serif;
 }
 
@@ -305,4 +309,100 @@ input[type=submit]:hover {
     text-align: center;
     padding-bottom: 1rem;
     color: #EDEBD7;
+}
+
+/*media query phone screens*/
+
+@media only screen and (max-width: 767px) and (orientation: portrait) { 
+    .pagecontainer{
+        position: relative;
+         display: block;
+         margin-top: -2rem;
+    }
+
+    .intromessage {
+        padding-top: 5rem;
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+        font-size: 2rem;
+        color: #EDEBD7;
+        }
+    
+    .landing-page{
+        width: 100%;
+        text-align: center;
+        background-color: #423E37;
+}
+
+    .aboutmecontainer {
+        display: block;
+        grid-gap: 0.5px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .aboutme1{
+    /*border: 1px solid black;*/
+    padding: 0.5rem;
+    }
+
+    .aboutme2{
+     
+    /*border: 1px solid black;*/
+    padding: 0.5rem;
+    }
+    
+    .aboutme3{
+       
+    /*border: 1px solid black;*/
+    padding: 0.5rem;
+    }
+    
+    .aboutme4{
+       
+    /*border: 1px solid black;*/
+    padding: 0.5rem;
+    }
+    
+    .aboutme5{
+    
+    /*border: 1px solid black;*/
+    padding: 0.5rem;
+    padding-top: 1rem;
+    margin-top: 1.5rem;
+    }
+    
+    .aboutme6{
+    
+    /*border: 1px solid black;*/
+    min-height: 200px;
+    padding-left: 0.5;
+    padding-bottom: 2rem;
+    }
+
+    .blogcontainer{
+        display: block;
+        padding: 3rem;
+    
+    }
+
+    .blog1{
+        border: 1px solid black;
+        margin: 0.5rem;
+        min-height: 240px;
+        min-width: 100px;
+    }
+
+    .contact{
+        background-color: #423E37;
+        width: 100%;
+        min-height: 400px;
+        position: relative;
+        text-align: center;
+        grid-auto-rows: auto;
+        color: #EDEBD7;
+        padding-bottom: 3rem;
+        padding-top: 0.5rem;
+        
+    }
 }
