@@ -349,10 +349,9 @@ input[type=submit]:hover {
 
 @media only screen and (max-width: 767px) and (orientation: portrait) { 
     .pagecontainer{
-         display: block;
+        display: block;
          margin-top: -2rem;
-         width: 100%;
-         margin-right: 0;
+         width: auto;
     }
 
     .intromessage {
@@ -459,5 +458,10 @@ input[type=submit]:hover {
         padding-bottom: 1rem;
         color: #EDEBD7;
     margin-top: -0.1rem;
+    }
+
+    .navmenu{
+        width: 100%;
+    display: none;
     }
 }
