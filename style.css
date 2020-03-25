@@ -120,12 +120,36 @@ text-align: center;
 padding: 0.5rem;
 }
 
-.icon{
+.iconabout{
     padding: 1rem;
+    min-height: 11rem;
 }
 
 .northlogo{
     width: 50%;
+    max-height: 50%;
+}
+.agilelogo{
+    width: 70%;
+    max-height: 50%;
+}
+.tddlogo{
+    width: 60%;
+    max-height: 50%;
+}
+.w3clogo{
+    width: 90%;
+    max-height: 50%;
+}
+.acmlogo{
+    width: 120%;
+    max-height: 50%;
+
+}
+
+.myphoto{
+    width: 50%;
+    
 }
 
 .myPhoto{
@@ -219,6 +243,7 @@ progress[value]::-webkit-progress-value {
     justify-items: center;
     background-color: whitesmoke;
     min-height: 400px;
+    padding-top: 1rem;
     position: relative;
     text-align: center;
 }
@@ -309,15 +334,17 @@ input[type=submit]:hover {
     text-align: center;
     padding-bottom: 1rem;
     color: #EDEBD7;
+
 }
 
 /*media query phone screens*/
 
 @media only screen and (max-width: 767px) and (orientation: portrait) { 
     .pagecontainer{
-        position: relative;
          display: block;
          margin-top: -2rem;
+         width: 100%;
+         margin-right: 0;
     }
 
     .intromessage {
@@ -380,6 +407,19 @@ input[type=submit]:hover {
     padding-bottom: 2rem;
     }
 
+    .myphoto{
+        width: 70%;
+    }
+
+    .progressbar {
+        text-align: left;
+        display: grid;
+        grid-template-columns: 1fr; 
+        padding-left: 3rem;
+        margin: 0;
+        grid-gap: 0;
+    }
+
     .blogcontainer{
         display: block;
         padding: 3rem;
@@ -401,8 +441,15 @@ input[type=submit]:hover {
         text-align: center;
         grid-auto-rows: auto;
         color: #EDEBD7;
-        padding-bottom: 3rem;
+        padding-bottom: 2rem;
         padding-top: 0.5rem;
-        
+    }
+    .footer{
+        background-color: #423E37;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 1rem;
+        color: #EDEBD7;
+    margin-top: -0.1rem;
     }
 }
