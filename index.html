@@ -28,19 +28,24 @@
     </ul>
   </div>
 
-  <!--pop out side nav bar hidden when screen > 767px-->
+  <!--pop out side nav bar hidden when screen < 767px-->
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a class="active" href="#home">HOME</a>
-    <a href="#aboutme">ABOUT</a>
-    <a href="#projects">PROJECTS</a>
-    <a href="#blog">BLOG</a>
-    <a href="#contact">CONTACT</a>
+    
+      <a class="active" href="#home" onclick="closeNav()">HOME</a>
+      <a href="#aboutme" onclick="closeNav()">ABOUT</a>
+      <a href="#projects" onclick="closeNav()">PROJECTS</a>
+      <a href="#blog" onclick="closeNav()">BLOG</a>
+      <a href="#contact" onclick="closeNav()">CONTACT</a>
+    
   </div>
+
+
   <!-- Use any element to open the sidenav -->
-  <span class="NavMenuBtn" onclick="openNav()">&times;</div>
-</span>
-  <!--pop out side nav bar end-->
+  <span class="floatNavBtn" onclick="openNav()">O</span>
+  
+
+
   <!-- Nav Menu Break -->
   <div class="navmenubreak"></div>
   <!-- About Me Page -->
@@ -179,17 +184,16 @@
 </div>
 </body>
 <footer class="footer">TIMOTHY DOOLAN @ 2020</footer>
+</html>
+
 <script>
   /* Open the sidenav */
 function openNav() {
   document.getElementById("mySidenav").style.width = "100%";
 }
+
 /* Close/hide the sidenav */
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
-function myFunction(x) {
-  x.classList.toggle("change");
-}
 </script>
-</html>

@@ -49,16 +49,12 @@ color: #EDEBD7;
    color: black;
    font-size: 0.85rem;
 }
-.sidenav {
-  display: none;
-}
-.NavMenuBtn{
-    display: none;
-  }
+
 /* Nav Menu */
 .navmenu{
     width: 100%;
 }
+
 ul {
     list-style-type: none;
     width: 100%;
@@ -349,7 +345,7 @@ input[type=submit]:hover {
     .pagecontainer{
         display: block;
          margin-top: -2rem;
-         width: auto;
+         width: 100%
     }
 
     .intromessage {
@@ -458,55 +454,56 @@ input[type=submit]:hover {
     margin-top: -0.1rem;
     }
 
-    .navmenu{
-        width: 100%;
-    display: none;
-    }
-    .sidenav {
-        height: 100%; /* 100% Full-height */
-        width: 0; /* 0 width - change this with JavaScript */
-        position: fixed; /* Stay in place */
-        z-index: 2; /* Stay on top */
-        top: 0; /* Stay at the top */
-        left: 0;
-        background-color: #111; /* Black*/
-        overflow-x: hidden; /* Disable horizontal scroll */
-        padding-top: 60px; /* Place content 60px from the top */
-        transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-      }
-      .sidenav a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #818181;
-        display: block;
-        transition: 0.3s;
-        
-      }
-    
-      .sidenav .closebtn {
-        position: absolute;
-        top: 0;
-        right: 2rem;
-        font-size: 48px;
-        color: violet;
-      }
-    
-    /* When you mouse over the navigation links, change their color */
-    .sidenav a:hover {
-     color: #f1f1f1;
-     }
-    
-     .NavMenuBtn{
-        position: fixed;
-        padding: 0rem;
-        top: 1rem;
-        right: 30px;
-        font-weight: bold;
-        font-size: 60px;
-        color: violet;
-        z-index: 1;
-     }
+    /*nav menu css*/
+    /* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    margin-left: 50px;
+    font-size: 3rem;
+    color: magenta;
+  }
+
+  .navmenu{
+      display: none;
+  }
+  .floatNavBtn{
+    position: fixed;
+    margin: auto;
+    font-size: 3rem;
+    color: magenta;
+    z-index: 1;
+  }
 }
 
 
