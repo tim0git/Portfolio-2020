@@ -5,6 +5,9 @@ html{
     font-family: 'Roboto', sans-serif;
 }
 
+/* first draft need to refactor code and remove duplicaton*/
+/*not happy with mobile nav menu howver functionality is correct, possoblt a sticky nav menu would be better?*/
+
 /* General Styles */
 .pagecontainer{
     width: 100%;
