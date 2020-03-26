@@ -6,9 +6,6 @@
     <title>Document</title>
     <!-- CSS Style sheet Link-->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <!--Font Awesome Icon Import-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Import google font-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
@@ -30,6 +27,20 @@
       <li><a href="#contact">CONTACT</a></li>
     </ul>
   </div>
+
+  <!--pop out side nav bar hidden when screen > 767px-->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a class="active" href="#home">HOME</a>
+    <a href="#aboutme">ABOUT</a>
+    <a href="#projects">PROJECTS</a>
+    <a href="#blog">BLOG</a>
+    <a href="#contact">CONTACT</a>
+  </div>
+  <!-- Use any element to open the sidenav -->
+  <span class="NavMenuBtn" onclick="openNav()">&times;</div>
+</span>
+  <!--pop out side nav bar end-->
   <!-- Nav Menu Break -->
   <div class="navmenubreak"></div>
   <!-- About Me Page -->
@@ -168,4 +179,17 @@
 </div>
 </body>
 <footer class="footer">TIMOTHY DOOLAN @ 2020</footer>
+<script>
+  /* Open the sidenav */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+}
+/* Close/hide the sidenav */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+</script>
 </html>
