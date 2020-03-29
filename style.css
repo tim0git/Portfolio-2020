@@ -1,475 +1,464 @@
-html{
-    font-family: 'Roboto', sans-serif;
-    width: auto!important; 
-    overflow-x: hidden!important
+html {
+  font-family: "Roboto", sans-serif;
+  width: auto !important;
+  overflow-x: hidden !important;
 }
 body {
-    width: auto!important; 
-    overflow-x: hidden!important;
-    margin: 0rem;
-    padding: 0rem;
-} 
+  width: auto !important;
+  overflow-x: hidden !important;
+  margin: 0rem;
+  padding: 0rem;
+}
 
 /* first draft need to refactor code and remove duplicaton*/
 /*not happy with mobile nav menu howver functionality is correct, possoblt a sticky nav menu would be better?*/
 
 /* General Styles */
-.pagecontainer{
-    margin: 0px;
-    border: 0px;
-    padding: 0px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: 8(1fr);
-    width: auto!important; 
-    overflow-x: hidden!important;
+.pagecontainer {
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 8 (1fr);
+  width: auto !important;
+  overflow-x: hidden !important;
 }
 
-.landing-page{
-    width: 100%;
-    min-height: 480px;
-    text-align: center;
-    text-justify: auto;
-    background-color: #423E37;
+.landing-page {
+  width: 100%;
+  min-height: 480px;
+  text-align: center;
+  text-justify: auto;
+  background-color: #423e37;
 }
 
 .intromessage {
-margin-top: 10%;
-font-size: 2rem;
-color: #EDEBD7;
+  margin-top: 10%;
+  font-size: 2rem;
+  color: #edebd7;
 }
-.name{
-    color: #48E5C2;
-    font-weight: bold;
+.name {
+  color: #48e5c2;
+  font-weight: bold;
 }
 .intromessage2 {
-font-size: 2rem;
-color: #EDEBD7;
+  font-size: 2rem;
+  color: #edebd7;
 }
-.introbtn{
-    border-radius: 1rem;
-    border-style: solid;
-    background-color: transparent;
-    width: 7rem;
-    height: 3rem;
-    font-size: 0.75rem;
-    color: #EDEBD7;
+.introbtn {
+  border-radius: 1rem;
+  border-style: solid;
+  background-color: transparent;
+  width: 7rem;
+  height: 3rem;
+  font-size: 0.75rem;
+  color: #edebd7;
 }
-.introbtn:hover{
-   background-color: #E3B23C;
-   color: black;
-   font-size: 0.85rem;
+.introbtn:hover {
+  background-color: #e3b23c;
+  color: black;
+  font-size: 0.85rem;
 }
 
 /* Nav Menu */
-.navmenu{
-    width: 100%;
+.navmenu {
+  width: 100%;
 }
 
 ul {
-    list-style-type: none;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333333;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #111;
-  }
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
 
-  .active {
-    color: #E3B23C;
-  }
+li {
+  float: left;
+}
 
-.navmenubreak{
-  background-color: #E3B23C; 
-  height: 0.20rem;
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  color: #e3b23c;
+}
+
+.navmenubreak {
+  background-color: #e3b23c;
+  height: 0.2rem;
   width: 100%;
 }
 
 /* About section */
-.about{
- 
-    width: 100%;
-    min-height: 400px;
-    text-align: center;
-    position: relative;
+.about {
+  width: 100%;
+  min-height: 400px;
+  text-align: center;
+  position: relative;
 }
 
 .aboutmecontainer {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: auto;
-    grid-gap: 0.5px;
-    padding-left: 3rem;
-    padding-right: 3rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 0.5px;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
-.aboutme1{
-    grid-column: 1/2;
-/*border: 1px solid black;*/
-text-align: center;
-padding: 0.5rem;
+.aboutme1 {
+  grid-column: 1/2;
+  /*border: 1px solid black;*/
+  text-align: center;
+  padding: 0.5rem;
 }
 
-.iconabout{
-    padding: 1rem;
-    min-height: 11rem;
+.iconabout {
+  padding: 1rem;
+  min-height: 11rem;
 }
 
-.northlogo{
-    width: 50%;
-    max-height: 50%;
+.northlogo {
+  width: 50%;
+  max-height: 50%;
 }
-.agilelogo{
-    width: 70%;
-    max-height: 50%;
+.agilelogo {
+  width: 70%;
+  max-height: 50%;
 }
-.tddlogo{
-    width: 60%;
-    max-height: 50%;
+.tddlogo {
+  width: 60%;
+  max-height: 50%;
 }
-.w3clogo{
-    width: 90%;
-    max-height: 50%;
+.w3clogo {
+  width: 90%;
+  max-height: 50%;
 }
-.acmlogo{
-    width: 120%;
-    max-height: 50%;
-
-}
-
-.myphoto{
-    width: 50%;
-    
+.acmlogo {
+  width: 120%;
+  max-height: 50%;
 }
 
-.myPhoto{
-    height: 10%;
+.myphoto {
+  width: 50%;
 }
 
-.aboutme2{
-    grid-column: 2/3;
-/*border: 1px solid black;*/
-padding: 0.5rem;
+.myPhoto {
+  height: 10%;
 }
 
-.aboutme3{
-    grid-column: 3/4;
-/*border: 1px solid black;*/
-padding: 0.5rem;
+.aboutme2 {
+  grid-column: 2/3;
+  /*border: 1px solid black;*/
+  padding: 0.5rem;
 }
 
-.aboutme4{
-    grid-column: 4/5;
-/*border: 1px solid black;*/
-padding: 0.5rem;
+.aboutme3 {
+  grid-column: 3/4;
+  /*border: 1px solid black;*/
+  padding: 0.5rem;
 }
 
-.aboutme5{
-grid-column: 1/3;
-/*border: 1px solid black;*/
-padding: 0.5rem;
-padding-top: 1rem;
-margin-top: 1.5rem;
+.aboutme4 {
+  grid-column: 4/5;
+  /*border: 1px solid black;*/
+  padding: 0.5rem;
 }
 
-.aboutme6{
-grid-column: 3/5;
-/*border: 1px solid black;*/
-min-height: 200px;
-padding-left: 0.5;
-padding-bottom: 2rem;
+.aboutme5 {
+  grid-column: 1/3;
+  /*border: 1px solid black;*/
+  padding: 0.5rem;
+  padding-top: 1rem;
+  margin-top: 1.5rem;
+}
+
+.aboutme6 {
+  grid-column: 3/5;
+  /*border: 1px solid black;*/
+  min-height: 200px;
+  padding-left: 0.5;
+  padding-bottom: 2rem;
 }
 
 .progressbar {
-    text-align: left;
-    display: grid;
-    grid-template-columns: 1fr;
-    padding-left: 0.5rem;
-    margin: 0;
-    grid-gap: 0;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-left: 0.5rem;
+  margin: 0;
+  grid-gap: 0;
 }
 
-.techskill{
-    padding-bottom: 0rem;
-    margin-bottom: 0rem;
-    border-bottom: 0rem;
+.techskill {
+  padding-bottom: 0rem;
+  margin-bottom: 0rem;
+  border-bottom: 0rem;
 }
 
 /*START OF PROGRESS BARS*/
 /* set standard appearance for non chrome browsers.*/
 progress[value] {
-    /* Reset the default appearance */
+  /* Reset the default appearance */
   -webkit-appearance: none;
   appearance: none;
-    width: 80%;
-    height: 1rem;
-  }
+  width: 80%;
+  height: 1rem;
+}
 /* color background bar */
 progress[value]::-webkit-progress-bar {
-    background-color: #eee;
-    border-radius: 2px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 }
 /* color progress bar with gradient*/
 progress[value]::-webkit-progress-value {
-    background-image:
-         -webkit-linear-gradient(-45deg, 
-                                 transparent 33%, rgba(0, 0, 0, .1) 33%, 
-                                 rgba(0,0, 0, .1) 66%, transparent 66%),
-         -webkit-linear-gradient(top, 
-                                 rgba(255, 255, 255, .25), 
-                                 rgba(0, 0, 0, .25)),
-         -webkit-linear-gradient(left, #09c, #f44);
-  
-      border-radius: 2px; 
-      background-size: 35px 20px, 100% 100%, 100% 100%;
+  background-image: -webkit-linear-gradient(
+      -45deg,
+      transparent 33%,
+      rgba(0, 0, 0, 0.1) 33%,
+      rgba(0, 0, 0, 0.1) 66%,
+      transparent 66%
+    ),
+    -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)),
+    -webkit-linear-gradient(left, #09c, #f44);
+
+  border-radius: 2px;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
 }
 /*end of progress bar*/
 /* END OF ABOUT SECTION */
 
 /* PROJECTS SECTION*/
-.projects{
-    width: 100%;
-    justify-items: center;
-    background-color: whitesmoke;
-    min-height: 400px;
-    padding-top: 1rem;
-    position: relative;
-    text-align: center;
+.projects {
+  width: 100%;
+  justify-items: center;
+  background-color: whitesmoke;
+  min-height: 400px;
+  padding-top: 1rem;
+  position: relative;
+  text-align: center;
 }
 
 /* BLOG SECTION*/
-.blog{
-    width: 100%;
-    min-height: 400px;
-    justify-items: center;
-    position: relative;
-    text-align: center;
+.blog {
+  width: 100%;
+  min-height: 400px;
+  justify-items: center;
+  position: relative;
+  text-align: center;
 }
-.blogcontainer{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1rem;
-    padding: 3rem;
-
+.blogcontainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  padding: 3rem;
 }
-.blog1{
-    border: 1px solid black;
-    min-height: 240px;
-    min-width: 100px;
+.blog1 {
+  border: 1px solid black;
+  min-height: 240px;
+  min-width: 100px;
 }
 
 /* CONTACT SECTION */
-.contact{
-    background-color: #423E37;
-    width: 100%;
-    padding-top: 1rem;
-    min-height: 400px;
-    position: relative;
-    text-align: center;
-    grid-auto-rows: auto;
-    color: #EDEBD7;
-    padding-bottom: 3rem;
-    
+.contact {
+  background-color: #423e37;
+  width: 100%;
+  padding-top: 1rem;
+  min-height: 400px;
+  position: relative;
+  text-align: center;
+  grid-auto-rows: auto;
+  color: #edebd7;
+  padding-bottom: 3rem;
 }
 .contactform {
- margin: auto;
+  margin: auto;
 }
 /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+input[type="text"],
+select,
+textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 /* Style the submit button with a specific background color etc */
-input[type=submit] {
-    background-color: transparent;
-    padding: 12px 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    color: #A39594;
+input[type="submit"] {
+  background-color: transparent;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #a39594;
 }
 /* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-    background-color: #E3B23C;
+input[type="submit"]:hover {
+  background-color: #e3b23c;
 }
 /* Add a background color and some padding around the form */
 .container {
-    border-radius: 5px;
-    width: 80%;
-    background-color: #f2f2f2;
-    padding: 1rem;
-    border: 1rem;
-    margin: auto;
-
+  border-radius: 5px;
+  width: 80%;
+  background-color: #f2f2f2;
+  padding: 1rem;
+  border: 1rem;
+  margin: auto;
 }
 /*color in footer and color text*/
-.footer{
-    background-color: #423E37;
-    width: 100%;
-    text-align: center;
-    padding-bottom: 1rem;
-    color: #EDEBD7;
-
+.footer {
+  background-color: #423e37;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 1rem;
+  color: #edebd7;
 }
-.socialicon{
-    padding: 0.25rem;
-    background-color: white;
-    border-radius: 30px;
-    margin: 1rem;
+.socialicon {
+  padding: 0.25rem;
+  background-color: white;
+  border-radius: 30px;
+  margin: 1rem;
 }
-.sidenav{
-    display:none;
+.sidenav {
+  display: none;
 }
-.floatNavBtn{
-    display: none;
+.floatNavBtn {
+  display: none;
 }
- 
 
 /* ----------------- MEDIA QUERY MOBILE -----------*/
 
 /*media query phone screens*/
 
-@media only screen and (max-width: 767px) and (orientation: portrait) { 
-    .pagecontainer{
-        margin: 0px;
-        border: 0px;
-        padding: 0px;
-        display: absolute;
-        width: auto!important; 
-        overflow-x: hidden!important;
-    }
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  .pagecontainer {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    display: absolute;
+    width: auto !important;
+    overflow-x: hidden !important;
+  }
 
-    .intromessage {
-        padding-top: 5rem;
-        padding-left: 0.25rem;
-        padding-right: 0.25rem;
-        font-size: 2rem;
-        color: #EDEBD7;
-        }
-    
-    .landing-page{
-        width: 100%;
-        text-align: center;
-        background-color: #423E37;
-}
+  .intromessage {
+    padding-top: 5rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    font-size: 2rem;
+    color: #edebd7;
+  }
 
-    .aboutmecontainer {
-        display: block;
-        grid-gap: 0.5px;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
+  .landing-page {
+    width: 100%;
+    text-align: center;
+    background-color: #423e37;
+  }
 
-    .aboutme1{
+  .aboutmecontainer {
+    display: block;
+    grid-gap: 0.5px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .aboutme1 {
     /*border: 1px solid black;*/
     padding: 0.5rem;
-    }
+  }
 
-    .aboutme2{
-     
+  .aboutme2 {
     /*border: 1px solid black;*/
     padding: 0.5rem;
-    }
-    
-    .aboutme3{
-       
+  }
+
+  .aboutme3 {
     /*border: 1px solid black;*/
     padding: 0.5rem;
-    }
-    
-    .aboutme4{
-       
+  }
+
+  .aboutme4 {
     /*border: 1px solid black;*/
     padding: 0.5rem;
-    }
-    
-    .aboutme5{
-    
+  }
+
+  .aboutme5 {
     /*border: 1px solid black;*/
     padding: 0.5rem;
     padding-top: 1rem;
     margin-top: 1.5rem;
-    }
-    
-    .aboutme6{
-    
+  }
+
+  .aboutme6 {
     /*border: 1px solid black;*/
     min-height: 200px;
     padding-left: 0.5;
     padding-bottom: 2rem;
-    }
+  }
 
-    .myphoto{
-        width: 70%;
-    }
+  .myphoto {
+    width: 70%;
+  }
 
-    .progressbar {
-        text-align: left;
-        display: grid;
-        grid-template-columns: 1fr; 
-        padding-left: 3rem;
-        margin: 0;
-        grid-gap: 0;
-    }
+  .progressbar {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 3rem;
+    margin: 0;
+    grid-gap: 0;
+  }
 
-    .blogcontainer{
-        display: block;
-        padding: 3rem;
-    
-    }
+  .blogcontainer {
+    display: block;
+    padding: 3rem;
+  }
 
-    .blog1{
-        border: 1px solid black;
-        margin: 0.5rem;
-        min-height: 240px;
-        min-width: 100px;
-    }
+  .blog1 {
+    border: 1px solid black;
+    margin: 0.5rem;
+    min-height: 240px;
+    min-width: 100px;
+  }
 
-    .contact{
-        background-color: #423E37;
-        width: 100%;
-        min-height: 400px;
-        position: relative;
-        text-align: center;
-        grid-auto-rows: auto;
-        color: #EDEBD7;
-        padding-bottom: 2rem;
-        padding-top: 0.5rem;
-    }
-    .footer{
-        background-color: #423E37;
-        width: 100%;
-        text-align: center;
-        padding-bottom: 1rem;
-        color: #EDEBD7;
+  .contact {
+    background-color: #423e37;
+    width: 100%;
+    min-height: 400px;
+    position: relative;
+    text-align: center;
+    grid-auto-rows: auto;
+    color: #edebd7;
+    padding-bottom: 2rem;
+    padding-top: 0.5rem;
+  }
+  .footer {
+    background-color: #423e37;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1rem;
+    color: #edebd7;
     margin-top: -0.1rem;
-    }
+  }
 
-    /*nav menu css*/
-    /* The side navigation menu */
-.sidenav {
+  /*nav menu css*/
+  /* The side navigation menu */
+  .sidenav {
     display: initial;
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
@@ -482,7 +471,7 @@ input[type=submit]:hover {
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
   }
-  
+
   /* The navigation menu links */
   .sidenav a {
     padding: 8px 8px 8px 32px;
@@ -493,12 +482,12 @@ input[type=submit]:hover {
     display: block;
     transition: 0.3s;
   }
-  
+
   /* When you mouse over the navigation links, change their color */
   .sidenav a:hover {
     color: #f1f1f1;
   }
-  
+
   /* Position and style the close button (top right corner) */
   .sidenav .closebtn {
     position: absolute;
@@ -509,10 +498,10 @@ input[type=submit]:hover {
     color: magenta;
   }
 
-  .navmenu{
-      display: none;
+  .navmenu {
+    display: none;
   }
-  .floatNavBtn{
+  .floatNavBtn {
     display: initial;
     position: fixed;
     font-weight: bold;
@@ -524,5 +513,3 @@ input[type=submit]:hover {
     z-index: 1;
   }
 }
-
-

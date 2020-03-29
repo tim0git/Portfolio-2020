@@ -1,195 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- CSS Style sheet Link-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!--Import google font-->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-</head>
-<body>
-  <div class="pagecontainer"> <!--grid page conatiner-->
-  <!-- Landing Page -->
-  <div id="home" class="landing-page">
-    <h2 class="intromessage"><span>Hello, I'm</span> <span class="name">Timothy Doolan</span></h2>
-    <h2 class="intromessage2">I am a full-stack developer.</h2>
-    <a href="#projects"><button class="introbtn">my work</button></a>
-  </div>
-  <!-- Nav Menu -->
-  <div class="navmenu">
-    <ul>
-      <li><a class="active" href="#home">HOME</a></li>
-      <li><a href="#aboutme">ABOUT</a></li>
-      <li><a href="#projects">PROJECTS</a></li>
-      <li><a href="#blog">BLOG</a></li>
-      <li><a href="#contact">CONTACT</a></li>
-    </ul>
-  </div>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="pagecontainer">
+      <!--grid page conatiner-->
+      <!-- Landing Page -->
+      <div id="home" class="landing-page">
+        <h2 class="intromessage">
+          <span>Hello, I'm</span> <span class="name">Timothy Doolan</span>
+        </h2>
+        <h2 class="intromessage2">I am a full-stack developer.</h2>
+        <a href="#projects"><button class="introbtn">my work</button></a>
+      </div>
+      <!-- Nav Menu -->
+      <div class="navmenu">
+        <ul>
+          <li><a class="active" href="#home">HOME</a></li>
+          <li><a href="#aboutme">ABOUT</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#blog">BLOG</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
 
-  <!--pop out side nav bar hidden when screen < 767px-->
-  <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    
-      <a class="active" href="#home" onclick="closeNav()">HOME</a>
-      <a href="#aboutme" onclick="closeNav()">ABOUT</a>
-      <a href="#projects" onclick="closeNav()">PROJECTS</a>
-      <a href="#blog" onclick="closeNav()">BLOG</a>
-      <a href="#contact" onclick="closeNav()">CONTACT</a>
-    
-  </div>
-  <!-- Use any element to open the sidenav -->
-  <span class="floatNavBtn" onclick="openNav()">x</span>
-  
-  <!-- Nav Menu Break -->
-  <div class="navmenubreak"></div>
-  <!-- About Me Page -->
-  <div class="about" id="aboutme">
-    <h2>ABOUT</h2>
-    <div class="aboutmecontainer">
-<div class="aboutme1">
-  <div class="iconabout">
-    <img class="agilelogo" src="Resources/Icons:Logos/agile-scrum-delivery.png" alt="Logo for North Coders">
-  </div>
-  <h3>Agile</h3>
-  <p>Agile is a mindset, it is more than just a collection of frameworks, XP. FDD, SCRUM, Sprints ect. Agile is an umbrella that covers all of these working methods, to be truly agile we must approach each journey with an open mind and allow the values and principles of agile development to guide our solution.</p>
-</div>
-<div class="aboutme2">
-  <div class="iconabout">
-    <img class="tddlogo" src="Resources/Icons:Logos/TDD.png" alt="Logo for North Coders">
-  </div>
-  <h3>Test Driven Development</h3>
-  <p>Never write a solution without a failed test.</p>
-  <q>The values that have defined TDD are as true now as they were when Kent Beck published eXtreme Programming (XP). First, you should write new business code only when an automated test has failed. Second, you should eliminate any duplication that you find.  This ensures that the code I write is built of highly cohesive, loosely coupled components that are robust and easily maintainable.</q>
-</div>
-<div class="aboutme3">
-  <div class="iconabout">
-    <img class="w3clogo" src="Resources/Icons:Logos/w3c-logo.png" alt="Logo for North Coders">
-  </div>
-  <h3>WCAG 2.1</h3>
-  <p>I believe that the technology we build should be accessable by all.</p>
-  <q>At least 1 in 5 people in the UK have a long term illness, impairment or disability. Many more have a temporary disability.</q>
-</div>
-<div class="aboutme4">
-  <div class="iconabout">
-    <img class="acmlogo" src="Resources/Icons:Logos/acm_logo_tablet.svg" alt="Logo for North Coders">
-  </div>
-  <h3>Responsibe Technology</h3>
-  <p>I adhere to and follow the ACM guidelines for computing professionals.</p>
-  <q>Computing professionals' actions change the world. To act responsibly, they should reflect upon the wider impacts of their work, consistently supporting the public good. The ACM Code of Ethics and Professional Conduct ("the Code") expresses the conscience of the profession.</q>
-</div>
-<div class="aboutme5">
-  <div class="icon">
-    <img class="myphoto" src="Resources/IMG_2270.jpeg" alt="Photo of Tim Doolan in Vietnam above the mountains looking over the Mekong Delta">
-  </div>
-  <h3>Who am i?</h3>
-  <p>North Coders student, March 2020 cohort.</p>
-</div>
-<div class="aboutme6">
-  <h2 class = "techskill" >Technical Ability</h2>
-  <div class="progressbar">
-    <h3>HTML5</h3>
-  <progress max="100" value="70"></progress>
-    <h3>CSS3</h3>
-  <progress max="100" value="70"></progress>
-    <h3>JavaScript ECMAS6</h3>
-  <progress max="100" value="60"></progress>
-    <h3>Node.JS</h3>
-  <progress max="100" value="30"></progress>
-    <h3>React</h3>
-  <progress max="100" value="10"></progress>
-    <h3>MySQL</h3>
-  <progress max="100" value="5"></progress>
-  </div>
-</div>
-    </div>
-  </div>
-  <!-- projects -->
-  <div class="projects" id="projects">
-    <h2>PROJECTS</h2>
-    <p>Okay i guess i had better build something soon. Truth is, this portfolio is my first full project</p>
-  </div>
-  <!-- my blog -->
-  <div class="blog" id="blog">
-    <h2>BLOG</h2>
-    <div class="blogcontainer">
-      <div class="blog1">
-        <div class="icon">
-          <img class="northlogo" src="Resources/Icons:Logos/North Coders Logo.png" alt="Logo for North Coders">
-        </div>
-        <h3>North Coders</h3>
-        <p>Student of North Coders april 2020 & yes i survived Covid-19.</p>
+      <!--pop out side nav bar hidden when screen < 767px-->
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+
+        <a class="active" href="#home" onclick="closeNav()">HOME</a>
+        <a href="#aboutme" onclick="closeNav()">ABOUT</a>
+        <a href="#projects" onclick="closeNav()">PROJECTS</a>
+        <a href="#blog" onclick="closeNav()">BLOG</a>
+        <a href="#contact" onclick="closeNav()">CONTACT</a>
       </div>
-      <div class="blog1">
-        <div class="icon">
-          <img class="northlogo" src="Resources/Icons:Logos/North Coders Logo.png" alt="Logo for North Coders">
+      <!-- Use any element to open the sidenav -->
+      <span class="floatNavBtn" onclick="openNav()">x</span>
+
+      <!-- Nav Menu Break -->
+      <div class="navmenubreak"></div>
+      <!-- About Me Page -->
+      <div class="about" id="aboutme">
+        <h2>ABOUT</h2>
+        <div class="aboutmecontainer">
+          <div class="aboutme1">
+            <div class="iconabout">
+              <img
+                class="agilelogo"
+                src="Resources/Icons:Logos/agile-scrum-delivery.png"
+                alt="Logo for North Coders"
+              />
+            </div>
+            <h3>Agile</h3>
+            <p>
+              Agile is a mindset, it is more than just a collection of
+              frameworks, XP. FDD, SCRUM, Sprints ect. Agile is an umbrella that
+              covers all of these working methods, to be truly agile we must
+              approach each journey with an open mind and allow the values and
+              principles of agile development to guide our solution.
+            </p>
+          </div>
+          <div class="aboutme2">
+            <div class="iconabout">
+              <img
+                class="tddlogo"
+                src="Resources/Icons:Logos/TDD.png"
+                alt="Logo for North Coders"
+              />
+            </div>
+            <h3>Test Driven Development</h3>
+            <p>Never write a solution without a failed test.</p>
+            <q
+              >The values that have defined TDD are as true now as they were
+              when Kent Beck published eXtreme Programming (XP). First, you
+              should write new business code only when an automated test has
+              failed. Second, you should eliminate any duplication that you
+              find. This ensures that the code I write is built of highly
+              cohesive, loosely coupled components that are robust and easily
+              maintainable.</q
+            >
+          </div>
+          <div class="aboutme3">
+            <div class="iconabout">
+              <img
+                class="w3clogo"
+                src="Resources/Icons:Logos/w3c-logo.png"
+                alt="Logo for North Coders"
+              />
+            </div>
+            <h3>WCAG 2.1</h3>
+            <p>
+              I believe that the technology we build should be accessable by
+              all.
+            </p>
+            <q
+              >At least 1 in 5 people in the UK have a long term illness,
+              impairment or disability. Many more have a temporary
+              disability.</q
+            >
+          </div>
+          <div class="aboutme4">
+            <div class="iconabout">
+              <img
+                class="acmlogo"
+                src="Resources/Icons:Logos/acm_logo_tablet.svg"
+                alt="Logo for North Coders"
+              />
+            </div>
+            <h3>Responsibe Technology</h3>
+            <p>
+              I adhere to and follow the ACM guidelines for computing
+              professionals.
+            </p>
+            <q
+              >Computing professionals' actions change the world. To act
+              responsibly, they should reflect upon the wider impacts of their
+              work, consistently supporting the public good. The ACM Code of
+              Ethics and Professional Conduct ("the Code") expresses the
+              conscience of the profession.</q
+            >
+          </div>
+          <div class="aboutme5">
+            <div class="icon">
+              <img
+                class="myphoto"
+                src="Resources/IMG_2270.jpeg"
+                alt="Photo of Tim Doolan in Vietnam above the mountains looking over the Mekong Delta"
+              />
+            </div>
+            <h3>Who am i?</h3>
+            <p>North Coders student, March 2020 cohort.</p>
+          </div>
+          <div class="aboutme6">
+            <h2 class="techskill">Technical Ability</h2>
+            <div class="progressbar">
+              <h3>HTML5</h3>
+              <progress max="100" value="70"></progress>
+              <h3>CSS3</h3>
+              <progress max="100" value="70"></progress>
+              <h3>JavaScript ECMAS6</h3>
+              <progress max="100" value="60"></progress>
+              <h3>Node.JS</h3>
+              <progress max="100" value="30"></progress>
+              <h3>React</h3>
+              <progress max="100" value="10"></progress>
+              <h3>MySQL</h3>
+              <progress max="100" value="5"></progress>
+            </div>
+          </div>
         </div>
-        <h3>North Coders</h3>
-        <p>Student of North Coders april 2020 & yes i survived Covid-19.</p>
       </div>
-      <div class="blog1">
-        <div class="icon">
-          <img class="northlogo" src="Resources/Icons:Logos/North Coders Logo.png" alt="Logo for North Coders">
-        </div>
-        <h3>North Coders</h3>
-        <p>Student of North Coders april 2020 & yes i survived Covid-19.</p>
+      <!-- projects -->
+      <div class="projects" id="projects">
+        <h2>PROJECTS</h2>
+        <p>
+          Okay i guess i had better build something soon. Truth is, this
+          portfolio is my first full project
+        </p>
       </div>
-      <div class="blog1">
-        <div class="icon">
-          <img class="northlogo" src="Resources/Icons:Logos/North Coders Logo.png" alt="Logo for North Coders">
+      <!-- my blog -->
+      <div class="blog" id="blog">
+        <h2>BLOG</h2>
+        <div class="blogcontainer">
+          <div class="blog1">
+            <div class="icon">
+              <img
+                class="northlogo"
+                src="Resources/Icons:Logos/North Coders Logo.png"
+                alt="Logo for North Coders"
+              />
+            </div>
+            <h3>North Coders</h3>
+            <p>Student of North Coders april 2020 & yes i survived Covid-19.</p>
+          </div>
+          <div class="blog1">
+            <div class="icon">
+              <img
+                class="northlogo"
+                src="Resources/Icons:Logos/North Coders Logo.png"
+                alt="Logo for North Coders"
+              />
+            </div>
+            <h3>North Coders</h3>
+            <p>Student of North Coders april 2020 & yes i survived Covid-19.</p>
+          </div>
+          <div class="blog1">
+            <div class="icon">
+              <img
+                class="northlogo"
+                src="Resources/Icons:Logos/North Coders Logo.png"
+                alt="Logo for North Coders"
+              />
+            </div>
+            <h3>North Coders</h3>
+            <p>Student of North Coders april 2020 & yes i survived Covid-19.</p>
+          </div>
+          <div class="blog1">
+            <div class="icon">
+              <img
+                class="northlogo"
+                src="Resources/Icons:Logos/North Coders Logo.png"
+                alt="Logo for North Coders"
+              />
+            </div>
+            <h3>North Coders</h3>
+            <p>Student of North Coders april 2020 & yes i survived Covid-19.</p>
+          </div>
         </div>
-        <h3>North Coders</h3>
-        <p>Student of North Coders april 2020 & yes i survived Covid-19.</p>
+      </div>
+      <!-- Contact me -->
+      <div class="contact">
+        <h2 id="contact">CONTACT</h2>
+        <!--soical media links-->
+        <div class="social">
+          <a href="https://codepen.io/tim0git" target="_blank"
+            ><img class="socialicon" src="Resources/Icons:Logos/cube.png" alt=""
+          /></a>
+          <a href="https://github.com/tim0git" target="_blank"
+            ><img
+              class="socialicon"
+              src="Resources/Icons:Logos/github.png"
+              alt=""
+          /></a>
+          <a href="https://tim-test-world.slack.com/home" target="_blank"
+            ><img
+              class="socialicon"
+              src="Resources/Icons:Logos/slack.png"
+              alt=""
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/timothy-doolan-b9b564b7/"
+            target="_blank"
+            ><img
+              class="socialicon"
+              src="Resources/Icons:Logos/linkedin.png"
+              alt=""
+          /></a>
+        </div>
+        <br />
+        <!-- Contact Form -->
+        <div class="container">
+          <form action="">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            />
+
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            />
+
+            <label for="Email">Email Address</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Please leave your email address.."
+            />
+
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height:200px"
+            ></textarea>
+
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+        <!-- End of conatact Form-->
       </div>
     </div>
-  </div>
-  <!-- Contact me -->
-  <div class="contact">
-    <h2 id="contact">CONTACT</h2>
-    <!--soical media links-->
-    <div class="social">
-      <a href="https://codepen.io/tim0git" target="_blank"><img class="socialicon" src="Resources/Icons:Logos/cube.png" alt=""></a>
-      <a href="https://github.com/tim0git" target="_blank"><img class="socialicon" src="Resources/Icons:Logos/github.png" alt=""></a>
-      <a href="https://tim-test-world.slack.com/home" target="_blank"><img class="socialicon" src="Resources/Icons:Logos/slack.png" alt=""></a>
-      <a href="https://www.linkedin.com/in/timothy-doolan-b9b564b7/" target="_blank"><img class="socialicon" src="Resources/Icons:Logos/linkedin.png" alt=""></a>
-    </div>
-    <br>
-    <!-- Contact Form -->
-    <div class="container">
-      <form action="">
-    
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-    
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-    
-        <label for="Email">Email Address</label>
-        <input type="text" id="email" name="email" placeholder="Please leave your email address..">
-    
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-    
-        <input type="submit" value="Submit">
-    
-      </form>
-    </div>
-  <!-- End of conatact Form-->
-  </div>
-</div>
-</body>
-<footer class="footer">TIMOTHY DOOLAN @ 2020</footer>
+  </body>
+  <footer class="footer">TIMOTHY DOOLAN @ 2020</footer>
 </html>
 
 <script>
   /* Open the sidenav */
-function openNav() {
-  document.getElementById("mySidenav").style.width = "100%";
-}
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+  }
 
-/* Close/hide the sidenav */
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
+  /* Close/hide the sidenav */
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
 </script>
