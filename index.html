@@ -6,6 +6,7 @@
     <title>Document</title>
     <!-- CSS Style sheet Link-->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./background.css">
     <!--Import google font-->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
@@ -21,7 +22,35 @@
           <span>Hello, I'm</span> <span class="name">Timothy Doolan</span>
         </h2>
         <h2 class="intromessage2">I am a full-stack developer.</h2>
-        <a href="#projects"><button class="introbtn">my work</button></a>
+          <!--soical media links-->
+          <div class="social">
+            <a href="https://codepen.io/tim0git" target="_blank"
+              ><img
+                class="socialicon"
+                src="Resources/Icons:Logos/cube.png"
+                alt=""
+            /></a>
+            <a href="https://github.com/tim0git" target="_blank"
+              ><img
+                class="socialicon"
+                src="Resources/Icons:Logos/github.png"
+                alt=""
+            /></a>
+            <a href="https://tim-test-world.slack.com/home" target="_blank"
+              ><img
+                class="socialicon"
+                src="Resources/Icons:Logos/slack.png"
+                alt=""
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/timothy-doolan-b9b564b7/"
+              target="_blank"
+              ><img
+                class="socialicon"
+                src="Resources/Icons:Logos/linkedin.png"
+                alt=""
+            /></a>
+          </div>
       </div>
       <!-- Nav Menu -->
       <div class="navmenu">
@@ -29,8 +58,6 @@
           <li><a class="active" href="#home">HOME</a></li>
           <li><a href="#aboutme">ABOUT</a></li>
           <li><a href="#projects">PROJECTS</a></li>
-          <li><a href="#blog">BLOG</a></li>
-          <li><a href="#contact">CONTACT</a></li>
         </ul>
       </div>
 
@@ -39,7 +66,6 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
           >&times;</a
         >
-
         <a class="active" href="#home" onclick="closeNav()">HOME</a>
         <a href="#aboutme" onclick="closeNav()">ABOUT</a>
         <a href="#projects" onclick="closeNav()">PROJECTS</a>
@@ -54,83 +80,19 @@
       <!-- About Me Page -->
       <div class="about" id="aboutme">
         <h2>ABOUT</h2>
+        <hr class="hrProjects">
         <div class="aboutmecontainer">
-          <div class="aboutme1">
-            <div class="iconabout">
-              <img
-                class="agilelogo"
-                src="Resources/Icons:Logos/agile-scrum-delivery.png"
-                alt="Logo for North Coders"
-              />
-            </div>
-            <h3>Agile</h3>
+          <div class="aboutMePersonalStatement">
+            <h3>Personal Statement</h3>
             <p>
-              Agile is a mindset, it is more than just a collection of
-              frameworks, XP. FDD, SCRUM, Sprints ect. Agile is an umbrella that
-              covers all of these working methods, to be truly agile we must
-              approach each journey with an open mind and allow the values and
-              principles of agile development to guide our solution.
+              I am a currently enrolled on the Northcoders full stack Javascript develop pathway program. I will be graduating at the end of June and I am looking to join
+              an exciting tech company that can allow junior developers to expand their skill-set and grow in confidence. I regularly aMend various meet-ups ** although
+              they are now hosted on zoom** such as lean agile and code up Stockport. I am passionate about software development and through hard work and
+              determination I am hoping to turn a hobby into a profession. To further my development I chose to aMending various hacks as it would give me the
+              opportunity to meet other developers and work with people who have decades of experience in this field. I very quickly gained some valuable experience. I
+              came to realise that great tech teams are built from a broad coalition of ability and talent. I am looking for an employer that will challenge me and allow me
+              to work with the latest technologies in the industry.
             </p>
-          </div>
-          <div class="aboutme2">
-            <div class="iconabout">
-              <img
-                class="tddlogo"
-                src="Resources/Icons:Logos/TDD.png"
-                alt="Logo for North Coders"
-              />
-            </div>
-            <h3>Test Driven Development</h3>
-            <p>Never write a solution without a failed test.</p>
-            <q
-              >The values that have defined TDD are as true now as they were
-              when Kent Beck published eXtreme Programming (XP). First, you
-              should write new business code only when an automated test has
-              failed. Second, you should eliminate any duplication that you
-              find. This ensures that the code I write is built of highly
-              cohesive, loosely coupled components that are robust and easily
-              maintainable.</q
-            >
-          </div>
-          <div class="aboutme3">
-            <div class="iconabout">
-              <img
-                class="w3clogo"
-                src="Resources/Icons:Logos/w3c-logo.png"
-                alt="Logo for North Coders"
-              />
-            </div>
-            <h3>WCAG 2.1</h3>
-            <p>
-              I believe that the technology we build should be accessable by
-              all.
-            </p>
-            <q
-              >At least 1 in 5 people in the UK have a long term illness,
-              impairment or disability. Many more have a temporary
-              disability.</q
-            >
-          </div>
-          <div class="aboutme4">
-            <div class="iconabout">
-              <img
-                class="acmlogo"
-                src="Resources/Icons:Logos/acm_logo_tablet.svg"
-                alt="Logo for North Coders"
-              />
-            </div>
-            <h3>Responsibe Technology</h3>
-            <p>
-              I adhere to and follow the ACM guidelines for computing
-              professionals.
-            </p>
-            <q
-              >Computing professionals' actions change the world. To act
-              responsibly, they should reflect upon the wider impacts of their
-              work, consistently supporting the public good. The ACM Code of
-              Ethics and Professional Conduct ("the Code") expresses the
-              conscience of the profession.</q
-            >
           </div>
           <div class="aboutme5">
             <div class="icon">
@@ -147,149 +109,72 @@
             <h2 class="techskill">Technical Ability</h2>
             <div class="progressbar">
               <h3>HTML5</h3>
-              <progress max="100" value="70"></progress>
+              <progress max="100" value="85"></progress>
               <h3>CSS3</h3>
-              <progress max="100" value="70"></progress>
+              <progress max="100" value="85"></progress>
               <h3>JavaScript ECMAS6</h3>
-              <progress max="100" value="60"></progress>
+              <progress max="100" value="75"></progress>
               <h3>Node.JS</h3>
-              <progress max="100" value="30"></progress>
+              <progress max="100" value="70"></progress>
               <h3>React</h3>
-              <progress max="100" value="10"></progress>
+              <progress max="100" value="65"></progress>
               <h3>MySQL</h3>
-              <progress max="100" value="5"></progress>
+              <progress max="100" value="45"></progress>
             </div>
           </div>
         </div>
       </div>
       <!-- projects -->
       <div class="projects" id="projects">
-        <h2>PROJECTS</h2>
-        <p>
-          Okay i guess i had better build something soon. Truth is, this
-          portfolio is my first full project
-        </p>
-      </div>
-      <!-- my blog -->
-      <div class="blog" id="blog">
-        <h2>BLOG</h2>
-        <div class="blogcontainer">
-          <div class="blog1">
-            <div class="icon">
-              <img
-                class="northlogo"
-                src="Resources/Icons:Logos/North Coders Logo.png"
-                alt="Logo for North Coders"
-              />
-            </div>
-            <h3>North Coders</h3>
-            <p>Student of North Coders april 2020 & yes i survived Covid-19.</p>
+        <h2 class="projectsTitle">PROJECTS</h2>
+        <hr class="hrProjects">
+        <div class="projectsContainer">
+          <div class="portfolioCard">
+            <img
+              class="portfolioImage"
+              src="./Resources/Screenshot 2020-06-01 at 15.15.14.png"
+              alt="published npm package"
+            />
+           <div class="my-1">
+            <p>
+              My first contribution to the npm world is a function that creates a JSON file from a folder of JSON Files. this demonstrates the use of callbacks, and will someday help a fellow Northoder in their hour of need.
+            </p>
+            <a href="https://www.npmjs.com/package/files2file_json"
+              >Click here to visit</a
+            >
+           </div>
           </div>
-          <div class="blog1">
-            <div class="icon">
-              <img
-                class="northlogo"
-                src="Resources/Icons:Logos/North Coders Logo.png"
-                alt="Logo for North Coders"
-              />
-            </div>
-            <h3>North Coders</h3>
-            <p>Student of North Coders april 2020 & yes i survived Covid-19.</p>
+
+          <div class="portfolioCard">
+            <img
+              class="portfolioImage"
+              src="./Resources//Screenshot 2020-06-01 at 15.15.43.png"
+              alt="MERN Stack developer social media website"
+            />
+           <div class="my-1">
+            <p>
+              MERN fullstack React application. Built with React, Redux, Express, mongoose and mongoDB, uses JWT authentication and is deployed via heroku.
+             </p>
+             <a href="https://nc-news-link.herokuapp.com">Click here to visit</a>
+           </div>
           </div>
-          <div class="blog1">
-            <div class="icon">
-              <img
-                class="northlogo"
-                src="Resources/Icons:Logos/North Coders Logo.png"
-                alt="Logo for North Coders"
-              />
-            </div>
-            <h3>North Coders</h3>
-            <p>Student of North Coders april 2020 & yes i survived Covid-19.</p>
+
+          <div class="portfolioCard">
+            <img
+              class="portfolioImage"
+              src="./Resources//Screenshot 2020-06-01 at 16.21.10.png"
+              alt="PERN fullstack news application built using KNEX, Express, Psql, and React. Hosted heroku Database/Backend and Netlify front end."
+            />
+          <div class="my-1">
+            <p>
+              PERN fullstack news application built using KNEX, Express, PSQL, and React. Hosted heroku Database/Backend and Netlify front end.
+            </p>
+            <a href="https://nc-news-link.herokuapp.com">Click here to visit</a>
           </div>
-          <div class="blog1">
-            <div class="icon">
-              <img
-                class="northlogo"
-                src="Resources/Icons:Logos/North Coders Logo.png"
-                alt="Logo for North Coders"
-              />
-            </div>
-            <h3>North Coders</h3>
-            <p>Student of North Coders april 2020 & yes i survived Covid-19.</p>
           </div>
         </div>
       </div>
-      <!-- Contact me -->
-      <div class="contact">
-        <h2 id="contact">CONTACT</h2>
-        <!--soical media links-->
-        <div class="social">
-          <a href="https://codepen.io/tim0git" target="_blank"
-            ><img class="socialicon" src="Resources/Icons:Logos/cube.png" alt=""
-          /></a>
-          <a href="https://github.com/tim0git" target="_blank"
-            ><img
-              class="socialicon"
-              src="Resources/Icons:Logos/github.png"
-              alt=""
-          /></a>
-          <a href="https://tim-test-world.slack.com/home" target="_blank"
-            ><img
-              class="socialicon"
-              src="Resources/Icons:Logos/slack.png"
-              alt=""
-          /></a>
-          <a
-            href="https://www.linkedin.com/in/timothy-doolan-b9b564b7/"
-            target="_blank"
-            ><img
-              class="socialicon"
-              src="Resources/Icons:Logos/linkedin.png"
-              alt=""
-          /></a>
-        </div>
-        <br />
-        <!-- Contact Form -->
-        <div class="container">
-          <form action="">
-            <label for="fname">First Name</label>
-            <input
-              type="text"
-              id="fname"
-              name="firstname"
-              placeholder="Your name.."
-            />
-
-            <label for="lname">Last Name</label>
-            <input
-              type="text"
-              id="lname"
-              name="lastname"
-              placeholder="Your last name.."
-            />
-
-            <label for="Email">Email Address</label>
-            <input
-              type="text"
-              id="email"
-              name="email"
-              placeholder="Please leave your email address.."
-            />
-
-            <label for="subject">Subject</label>
-            <textarea
-              id="subject"
-              name="subject"
-              placeholder="Write something.."
-              style="height:200px"
-            ></textarea>
-
-            <input type="submit" value="Submit" />
-          </form>
-        </div>
-        <!-- End of conatact Form-->
-      </div>
+    </div>
     </div>
   </body>
   <footer class="footer">TIMOTHY DOOLAN @ 2020</footer>

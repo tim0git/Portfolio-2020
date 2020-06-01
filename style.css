@@ -30,21 +30,22 @@ body {
   min-height: 480px;
   text-align: center;
   text-justify: auto;
-  background-color: #423e37;
+  background-color: whitesmoke;
 }
 
 .intromessage {
   margin-top: 10%;
   font-size: 2rem;
-  color: #edebd7;
+  color: black;
+  z-index: 3;
 }
 .name {
   color: #48e5c2;
-  font-weight: bold;
+  font-weight: 700;
 }
 .intromessage2 {
   font-size: 2rem;
-  color: #edebd7;
+  color: black;
 }
 .introbtn {
   border-radius: 1rem;
@@ -113,41 +114,32 @@ li a:hover {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: auto;
-  grid-gap: 0.5px;
+  grid-template-areas:
+    "a a a a"
+    "b b c c";
+  grid-gap: 0.5rem;
   padding-left: 3rem;
   padding-right: 3rem;
 }
 
-.aboutme1 {
-  grid-column: 1/2;
-  /*border: 1px solid black;*/
-  text-align: center;
-  padding: 0.5rem;
+.aboutMePersonalStatement {
+  grid-area: a;
 }
 
-.iconabout {
-  padding: 1rem;
-  min-height: 11rem;
+.aboutme5 {
+  padding-top: 6rem;
+  grid-area: b;
+}
+
+.aboutme6 {
+  grid-area: c;
+  min-height: 200px;
+  padding-left: 0.5;
+  padding-bottom: 2rem;
 }
 
 .northlogo {
   width: 50%;
-  max-height: 50%;
-}
-.agilelogo {
-  width: 70%;
-  max-height: 50%;
-}
-.tddlogo {
-  width: 60%;
-  max-height: 50%;
-}
-.w3clogo {
-  width: 90%;
-  max-height: 50%;
-}
-.acmlogo {
-  width: 120%;
   max-height: 50%;
 }
 
@@ -157,40 +149,6 @@ li a:hover {
 
 .myPhoto {
   height: 10%;
-}
-
-.aboutme2 {
-  grid-column: 2/3;
-  /*border: 1px solid black;*/
-  padding: 0.5rem;
-}
-
-.aboutme3 {
-  grid-column: 3/4;
-  /*border: 1px solid black;*/
-  padding: 0.5rem;
-}
-
-.aboutme4 {
-  grid-column: 4/5;
-  /*border: 1px solid black;*/
-  padding: 0.5rem;
-}
-
-.aboutme5 {
-  grid-column: 1/3;
-  /*border: 1px solid black;*/
-  padding: 0.5rem;
-  padding-top: 1rem;
-  margin-top: 1.5rem;
-}
-
-.aboutme6 {
-  grid-column: 3/5;
-  /*border: 1px solid black;*/
-  min-height: 200px;
-  padding-left: 0.5;
-  padding-bottom: 2rem;
 }
 
 .progressbar {
@@ -244,12 +202,48 @@ progress[value]::-webkit-progress-value {
 /* PROJECTS SECTION*/
 .projects {
   width: 100%;
-  justify-items: center;
   background-color: whitesmoke;
   min-height: 400px;
   padding-top: 1rem;
-  position: relative;
   text-align: center;
+}
+
+.projectsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.projectsTitle {
+  grid-area: a;
+}
+
+.hrProjects{
+  max-width: 9%;
+}
+
+.portfolioCard {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  margin: 1rem;
+  padding: 0rem;
+  border: 1px dotted black;
+}
+
+.portfolioImage {
+  min-height: 50%;
+  grid-row: 1/2;
+  max-width: 100%;
+}
+
+.my-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0.15rem;
+  padding: 0.25rem;
 }
 
 /* BLOG SECTION*/
@@ -326,7 +320,8 @@ input[type="submit"]:hover {
   background-color: #423e37;
   width: 100%;
   text-align: center;
-  padding-bottom: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   color: #edebd7;
 }
 .socialicon {
