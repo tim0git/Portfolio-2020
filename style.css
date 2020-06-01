@@ -10,9 +10,6 @@ body {
   padding: 0rem;
 }
 
-/* first draft need to refactor code and remove duplicaton*/
-/*not happy with mobile nav menu howver functionality is correct, possoblt a sticky nav menu would be better?*/
-
 /* General Styles */
 .pagecontainer {
   margin: 0px;
@@ -219,7 +216,7 @@ progress[value]::-webkit-progress-value {
   grid-area: a;
 }
 
-.hrProjects{
+.hrProjects {
   max-width: 9%;
 }
 
