@@ -141,7 +141,7 @@ li a:hover {
 }
 
 .photoMe {
-  padding-top: 6rem;
+  padding-top: 1.5rem;
   grid-area: b;
 }
 
@@ -231,9 +231,12 @@ progress[value]::-webkit-progress-value {
   min-height: 400px;
   padding-top: 1rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .projectsContainer {
+  align-self: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
@@ -256,9 +259,9 @@ progress[value]::-webkit-progress-value {
 }
 
 .portfolioImage {
-  min-height: 50%;
   grid-row: 1/2;
-  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .my-1 {
@@ -268,7 +271,13 @@ progress[value]::-webkit-progress-value {
   margin: 0.15rem;
   padding: 0.25rem;
 }
-
+@media only screen and (min-width: 1200px){
+  .projectsContainer{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+  }
+}
 
 /* ----------------- MEDIA QUERY MOBILE -----------*/
 /*media query phone screens*/
@@ -284,7 +293,7 @@ progress[value]::-webkit-progress-value {
    }
 
   .aboutmecontainer {
-    display: flex;
+   display: flex;
     flex-direction:column ;
   }
 
