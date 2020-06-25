@@ -250,6 +250,7 @@ progress[value]::-webkit-progress-value {
 .portfolioCard {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   margin: 1rem;
   padding: 0rem;
 }
