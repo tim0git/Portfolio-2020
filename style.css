@@ -1,15 +1,21 @@
 html {
   font-family: "Roboto", sans-serif;
-  width: auto !important;
-  overflow-x: hidden !important;
 }
+
 body {
-  width: auto !important;
-  overflow-x: hidden !important;
   margin: 0rem;
   padding: 0rem;
 }
 
+.npmPackage{
+  color:purple;
+  font-weight: bolder;
+}
+.footer{
+  margin: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
 /* General Styles */
 .pagecontainer {
   margin: 0px;
@@ -18,8 +24,16 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: 8 (1fr);
-  width: auto !important;
-  overflow-x: hidden !important;
+}
+
+section{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.heading{
+  padding: 1rem;
+  font-size: 2rem;
 }
 
 .landing-page {
@@ -29,21 +43,23 @@ body {
   text-justify: auto;
   background-color: whitesmoke;
 }
-
-.intromessage {
-  margin-top: 10%;
-  font-size: 2rem;
-  color: black;
-  z-index: 3;
-}
+/* <--------  Lanfing Page Message.  --------> */
 .name {
   color: #48e5c2;
   font-weight: 700;
 }
+
+.social{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 .intromessage2 {
   font-size: 2rem;
   color: black;
 }
+
 .introbtn {
   border-radius: 1rem;
   border-style: solid;
@@ -117,15 +133,20 @@ li a:hover {
   grid-gap: 0.5rem;
   padding-left: 3rem;
   padding-right: 3rem;
+  padding-bottom: 3rem;
 }
 
 .aboutMePersonalStatement {
   grid-area: a;
 }
 
-.aboutme5 {
+.photoMe {
   padding-top: 6rem;
   grid-area: b;
+}
+
+.photoMe a {
+  font-size: 1.5rem;
 }
 
 .aboutme6 {
@@ -163,7 +184,12 @@ li a:hover {
   border-bottom: 0rem;
 }
 
+p{
+  text-align: justify;
+}
+
 /*START OF PROGRESS BARS*/
+
 /* set standard appearance for non chrome browsers.*/
 progress[value] {
   /* Reset the default appearance */
@@ -194,7 +220,9 @@ progress[value]::-webkit-progress-value {
   background-size: 35px 20px, 100% 100%, 100% 100%;
 }
 /*end of progress bar*/
-/* END OF ABOUT SECTION */
+
+
+
 
 /* PROJECTS SECTION*/
 .projects {
@@ -206,11 +234,10 @@ progress[value]::-webkit-progress-value {
 }
 
 .projectsContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 1rem;
-}
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: ;
+ }
 
 .projectsTitle {
   grid-area: a;
@@ -221,9 +248,9 @@ progress[value]::-webkit-progress-value {
 }
 
 .portfolioCard {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
+  
   margin: 1rem;
   padding: 0rem;
   border: 1px dotted black;
@@ -243,265 +270,44 @@ progress[value]::-webkit-progress-value {
   padding: 0.25rem;
 }
 
-/* BLOG SECTION*/
-.blog {
-  width: 100%;
-  min-height: 400px;
-  justify-items: center;
-  position: relative;
-  text-align: center;
-}
-.blogcontainer {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1rem;
-  padding: 3rem;
-}
-.blog1 {
-  border: 1px solid black;
-  min-height: 240px;
-  min-width: 100px;
-}
-
-/* CONTACT SECTION */
-.contact {
-  background-color: #423e37;
-  width: 100%;
-  padding-top: 1rem;
-  min-height: 400px;
-  position: relative;
-  text-align: center;
-  grid-auto-rows: auto;
-  color: #edebd7;
-  padding-bottom: 3rem;
-}
-.contactform {
-  margin: auto;
-}
-/* Style inputs with type="text", select elements and textareas */
-input[type="text"],
-select,
-textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-/* Style the submit button with a specific background color etc */
-input[type="submit"] {
-  background-color: transparent;
-  padding: 12px 20px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  color: #a39594;
-}
-/* When moving the mouse over the submit button, add a darker green color */
-input[type="submit"]:hover {
-  background-color: #e3b23c;
-}
-/* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  width: 80%;
-  background-color: #f2f2f2;
-  padding: 1rem;
-  border: 1rem;
-  margin: auto;
-}
-/*color in footer and color text*/
-.footer {
-  background-color: #423e37;
-  width: 100%;
-  text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  color: #edebd7;
-}
-.socialicon {
-  padding: 0.25rem;
-  background-color: white;
-  border-radius: 30px;
-  margin: 1rem;
-}
-.sidenav {
-  display: none;
-}
-.floatNavBtn {
-  display: none;
-}
 
 /* ----------------- MEDIA QUERY MOBILE -----------*/
-
 /*media query phone screens*/
+@media only screen and (max-width: 480px){
 
-@media only screen and (max-width: 767px) and (orientation: portrait) {
-  .pagecontainer {
-    margin: 0px;
-    border: 0px;
-    padding: 0px;
-    display: absolute;
-    width: auto !important;
-    overflow-x: hidden !important;
+  .npmPackage{
+    font-size: .84rem;
   }
 
-  .intromessage {
-    padding-top: 5rem;
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
-    font-size: 2rem;
-    color: #edebd7;
+  .pagecontainer {
+    display: flex;
+    flex-direction: column;
+   }
+
+  .aboutmecontainer {
+    display: flex;
+    flex-direction:column ;
+  }
+
+  .projectsContainer{
+    display: flex;
+    flex-direction:column ;
   }
 
   .landing-page {
     width: 100%;
+    min-height: 25rem;
     text-align: center;
-    background-color: #423e37;
+    text-justify: auto;
+    background-color: whitesmoke;
   }
 
-  .aboutmecontainer {
-    display: block;
-    grid-gap: 0.5px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .aboutme1 {
-    /*border: 1px solid black;*/
-    padding: 0.5rem;
-  }
-
-  .aboutme2 {
-    /*border: 1px solid black;*/
-    padding: 0.5rem;
-  }
-
-  .aboutme3 {
-    /*border: 1px solid black;*/
-    padding: 0.5rem;
-  }
-
-  .aboutme4 {
-    /*border: 1px solid black;*/
-    padding: 0.5rem;
-  }
-
-  .aboutme5 {
-    /*border: 1px solid black;*/
-    padding: 0.5rem;
-    padding-top: 1rem;
-    margin-top: 1.5rem;
-  }
-
-  .aboutme6 {
-    /*border: 1px solid black;*/
-    min-height: 200px;
-    padding-left: 0.5;
-    padding-bottom: 2rem;
-  }
-
-  .myphoto {
-    width: 70%;
-  }
-
-  .progressbar {
-    text-align: left;
-    display: grid;
-    grid-template-columns: 1fr;
-    padding-left: 3rem;
-    margin: 0;
-    grid-gap: 0;
-  }
-
-  .blogcontainer {
-    display: block;
-    padding: 3rem;
-  }
-
-  .blog1 {
-    border: 1px solid black;
-    margin: 0.5rem;
-    min-height: 240px;
-    min-width: 100px;
-  }
-
-  .contact {
-    background-color: #423e37;
-    width: 100%;
-    min-height: 400px;
-    position: relative;
-    text-align: center;
-    grid-auto-rows: auto;
-    color: #edebd7;
-    padding-bottom: 2rem;
-    padding-top: 0.5rem;
-  }
-  .footer {
-    background-color: #423e37;
-    width: 100%;
-    text-align: center;
-    padding-bottom: 1rem;
-    color: #edebd7;
-    margin-top: -0.1rem;
-  }
-
-  /*nav menu css*/
-  /* The side navigation menu */
-  .sidenav {
-    display: initial;
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 2; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-  }
-
-  /* The navigation menu links */
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    display: inline;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-
-  /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-
-  /* Position and style the close button (top right corner) */
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    margin-left: 50px;
-    font-size: 3rem;
-    color: magenta;
-  }
-
-  .navmenu {
-    display: none;
-  }
-  .floatNavBtn {
-    display: initial;
-    position: fixed;
-    font-weight: bold;
-    margin: auto;
-    top: 1.8rem;
-    left: 1.5rem;
-    font-size: 3rem;
-    color: magenta;
-    z-index: 1;
+  .portfolioCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 1rem;
+    padding: 0rem;
+    border: none;
   }
 }
