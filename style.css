@@ -236,7 +236,7 @@ progress[value]::-webkit-progress-value {
 .projectsContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: ;
+  grid-template-rows: auto;
  }
 
 .projectsTitle {
